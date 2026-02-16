@@ -1,0 +1,172 @@
+
+
+body {
+    background-color: #161616;
+    color: #ffffff;
+    min-height: 100vh;
+  }
+
+colordat{
+  color:#ffffff;
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: none;
+  border:none;
+}
+
+.btn-primary:hover {
+   transform: scale(1.1);
+}
+
+
+/* Aplica solo a los títulos que quieras */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300; /* más delgado como en tu imagen */
+    line-height: 1.2; /* opcional: ajusta el espacio entre líneas */
+    letter-spacing: 0.5px; /* opcional: ajusta el espacio entre letras */
+}
+
+
+
+/* .carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.carousel-overlay h2,
+.carousel-overlay p {
+  z-index: 3;
+}
+*/
+.carousel-img {
+  height: 800px;      
+  object-fit: cover; 
+} 
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10; /* subir más */
+  pointer-events: none;
+  display: flex; /* para centrar el contenido verticalmente */
+  
+  justify-content: center; /* horizontal */
+  align-items: center; 
+    text-align: center;  
+}
+
+.carousel-overlay {
+  pointer-events: none; /* no bloquea clicks */
+}
+
+.carousel-overlay a,
+.carousel-overlay button {
+  pointer-events: auto; /* el botón sí es clickeable */
+}
+
+
+.carousel-overlay h2,
+.carousel-overlay p {
+  z-index: 11; /* aún más arriba */
+}
+
+.social-btn {
+  border: 1px solid;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Facebook */
+.social-btn.facebook {
+  color: #1877f2;
+  border-color: #1877f2;
+}
+.social-btn.facebook:hover {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+/* TikTok */
+.social-btn.tiktok {
+  color: #000;
+  border-color: #000;
+}
+.social-btn.tiktok:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* WhatsApp */
+.social-btn.whatsapp {
+  color: #25d366;
+  border-color: #25d366;
+}
+.social-btn.whatsapp:hover {
+  background-color: #25d366;
+  color: #fff;
+}
+/* Google Maps */
+.social-btn.maps {
+  color: #ea4335;          /* rojo Google */
+  border-color: #ea4335;
+}
+
+.social-btn.maps:hover {
+  background-color: #ea4335;
+  color: #fff;
+}
+
+.img-col {
+  max-height: 260px;     /* límite que tú quieras */
+  overflow: hidden;      /* recorta, no estira */
+}
+
+.img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* respeta proporción */
+  object-position: center;
+}
+.clear-btn {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.clear-btn:hover {
+  background: rgba(108, 117, 125, 0.15);
+}
+.filter-group {
+  margin-bottom: 10px;
+}
+
+.filter-group-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-subcategories {
+  display: none;
+  padding-left: 10px;
+}
+
+.filter-subcategories.open {
+  display: block;
+}
