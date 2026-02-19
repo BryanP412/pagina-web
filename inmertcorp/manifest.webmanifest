@@ -1,0 +1,22 @@
+{
+  "name": "InmetcorPeru",
+  "short_name": "Inmetcorp",
+  "description": "Puertas de garaje, estructuras metálicas y seguridad electrónica en Lima.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "a.png",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+    {
+      "src": "inmetcorp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
