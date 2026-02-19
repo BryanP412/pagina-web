@@ -13,5 +13,10 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+    {
+      "src": "inmetcorp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
