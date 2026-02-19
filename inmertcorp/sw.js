@@ -1,4 +1,4 @@
-const CACHE_NAME = "inmetcorp-pwa-v1";
+const CACHE_NAME = "inmetcorp-pwa-v2";
 
 const APP_SHELL = [
   "/",
@@ -35,18 +35,28 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
+  // 🔥 IMPORTANTE: solo cachear http/https
+  if (!event.request.url.startsWith("http")) return;
+
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
 
       return fetch(event.request)
         .then((response) => {
-          if (!response || response.status !== 200 || response.type !== "basic") {
+          if (
+            !response ||
+            response.status !== 200 ||
+            response.type !== "basic"
+          ) {
             return response;
           }
 
           const responseClone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+
           return response;
         })
         .catch(() => caches.match("/index.html"));
