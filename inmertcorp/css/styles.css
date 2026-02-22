@@ -96,16 +96,19 @@ h1, h2, h3, h4, h5, h6 {
 .social-btn.facebook:hover {
   background-color: #1877f2;
   color: #fff;
+  box-shadow: 0 0 8px #1877f2, 0 0 16px #0d5ecf;
 }
 
 /* TikTok */
 .social-btn.tiktok {
-  color: #000;
-  border-color: #000;
-}
-.social-btn.tiktok:hover {
   background-color: #000;
   color: #fff;
+  border: 1px solid #000;
+  transition: 0.3s ease;
+}
+
+.social-btn.tiktok:hover {
+  box-shadow: 0 0 8px #ffffff, 0 0 8px #25F4EE;
 }
 
 /* WhatsApp */
@@ -116,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-btn.whatsapp:hover {
   background-color: #25d366;
   color: #fff;
+box-shadow: 0 0 8px #25D366, 0 0 16px #128C7E;
 }
 /* Google Maps */
 .social-btn.maps {
@@ -126,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-btn.maps:hover {
   background-color: #ea4335;
   color: #fff;
+box-shadow: 0 0 8px #EA4335, 0 0 16px #FF6F61;
 }
 
 .img-col {
