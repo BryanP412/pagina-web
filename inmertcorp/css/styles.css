@@ -47,9 +47,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 3;
 }
 */
-.carousel-img {
+.carousel-img,.carousel-item video {
   height: 800px;      
+  width: 100%;
   object-fit: cover; 
+    display: block;
 } 
 .carousel-overlay {
   position: absolute;
