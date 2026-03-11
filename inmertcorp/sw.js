@@ -1,11 +1,11 @@
-const CACHE_NAME = "inmetcorp-pwa-v4";
+const CACHE_NAME = "inmetcorp-pwa-v1.0.5";
 
 const APP_SHELL = [
   "/",
   "/index.html",
   "/catalogo.html",
   "/manifest.webmanifest",
-  "/a.png",
+  "/img/nuevo/a.png",
   "/css/styles.css",
   "/css/catalogo.css",
   "/js/main.js",

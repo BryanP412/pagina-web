@@ -9,7 +9,7 @@
   "theme_color": "#111111",
   "icons": [
     {
-      "src": "a.png",
+      "src": "img/nuevo/a.png",
       "type": "image/png",
       "purpose": "any maskable"
     }
