@@ -177,3 +177,12 @@ box-shadow: 0 0 8px #EA4335, 0 0 16px #FF6F61;
 .filter-subcategories.open {
   display: block;
 }
+
+.productos-destacados .card-img-top,
+.productos-destacados .card-video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}

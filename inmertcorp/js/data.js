@@ -37,13 +37,13 @@ export const productsData = [
 
   
   ...withGroup('seguridad_electronica', [
-
+     { name: 'Lector de tarjetas RFID para control de acceso de la marca ZKTeco', category: 'control de acceso' },
   ]),
 
 
   ...withGroup('estructuras_metalicas', [
     // ===== COBERTURAS =====
-    { name: 'Reja de Seguridad', category: 'coberturas metalicas' },
+    { name: 'Cobertura metalica', category: 'coberturas metalicas' },
     { name: 'Coberturas de Aluminio y Madera', category: 'coberturas metalicas' },
     { name: 'Techo parabólico con estructura metálica', category: 'coberturas metalicas' },
     
