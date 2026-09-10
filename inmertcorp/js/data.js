@@ -22,6 +22,7 @@ export const productsData = [
     { name: 'Puerta metálica plateada con paneles ondulados y secciones de vidrio oscurecido', category: 'puertas' },
     { name: 'Puerta metálica de seguridad negro mate con paneles horizontales y fijo lateral de vidrio templado', category: 'puertas' },
     { name: 'Puerta metálica de alta seguridad con panel central en madera veteada y sección lateral en negro mate', category: 'puertas' },
+    { name: 'Puerta metálica negra', category: 'puertas' },
     
 
     
@@ -52,5 +53,9 @@ export const productsData = [
     { name: 'Baranda de acero inoxidable', category: 'escaleras' },
     { name: 'Escalera de zanca central con pasos volados y baranda de cristal templado', category: 'escaleras' },
     { name: 'Baranda de acero inoxidable con tubos horizontales', category: 'escaleras' },
+  ]),
+
+  ...withGroup('baranda', [
+    { name: 'Baranda de balcón', category: 'baranda' },
   ]),
 ];

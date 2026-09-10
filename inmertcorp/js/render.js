@@ -8,7 +8,6 @@ export function renderProducts() {
   const counters = {}; // contador por categoría
 
   grid.innerHTML = productsData.map((p, index) => {
-    const delay = index * 100;
 
     counters[p.category] = (counters[p.category] || 0) + 1;
     const imgIndex = counters[p.category];
@@ -20,14 +19,16 @@ export function renderProducts() {
            data-category="${p.category}">
         <div class="product-card bg-dark border-0"
           data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="${delay}"
+          data-aos-duration="600"
+          data-aos-delay="${Math.min(index, 8) * 70}"
           data-aos-once="true"
           onclick='openProduct("${p.name}", "${imgPath}")'>
 
 
           <img 
             src="${imgPath}"
+            loading="lazy"
+            decoding="async"
             onerror="this.onerror=null;this.src='img/${p.category}/${p.category}${imgIndex}.png';"
             alt="${p.name}"
           >
